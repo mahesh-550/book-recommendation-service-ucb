@@ -1,4 +1,4 @@
-/*INSERT INTO books_table (title, author, genre, branch, rating, book_hash)
+INSERT INTO books_table (title, author, genre, branch, rating, book_hash)
 VALUES ('The Book Thief', 'Markus Zusak', 'Historical Fiction', 'Literature', 4.6, 'B029A029');
 
 INSERT INTO books_table (title, author, genre, branch, rating, book_hash)
@@ -408,4 +408,3 @@ INSERT INTO books_table (title, author, genre, branch, rating, book_hash) VALUES
 INSERT INTO books_table (title, author, genre, branch, rating, book_hash) VALUES ('Ethics in Journalism', 'George Orwell', 'Non-Fiction', 'Journalism', 4.8, 'B198C198');
 INSERT INTO books_table (title, author, genre, branch, rating, book_hash) VALUES ('The World of Sociology', 'Émile Durkheim', 'Education', 'Sociology', 4.5, 'B199C199');
 INSERT INTO books_table (title, author, genre, branch, rating, book_hash) VALUES ('Anthropological Insights', 'Margaret Mead', 'Science', 'Anthropology', 4.7, 'B200C200');
-*/

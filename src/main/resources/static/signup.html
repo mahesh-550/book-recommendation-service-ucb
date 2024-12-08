@@ -84,6 +84,13 @@
             text-align: center;
         }
 
+        .success-message {
+            color: rgb(0, 255, 60);
+            font-size: 14px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
         .links {
             text-align: center;
             margin-top: 20px;
@@ -105,7 +112,7 @@
     <h2>Sign Up</h2>
 
     <!-- Error message placeholder -->
-    <div class="error-message" id="error-message">
+    <div class="error-message" class="success-message" id="error-message">
         <!-- Display signup errors here (if any) -->
     </div>
 
@@ -191,7 +198,7 @@
             }
         })
         .then(message => {
-            document.getElementById('error-message').textContent = message; // Display success message
+            document.getElementByClassName('success-message').textContent = message; // Display success message
             //sendWelcomeEmail(data.email); // Send welcome email after successful signup
             // Clear the form after successful signup
             document.getElementById('signup-form').reset();

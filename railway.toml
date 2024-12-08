@@ -1,0 +1,5 @@
+[build]
+command = "./mvnw clean install"
+
+[start]
+command = "java -jar target/book-recommendation-service-0.0.1-SNAPSHOT.jar"

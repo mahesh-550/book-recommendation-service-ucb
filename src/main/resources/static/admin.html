@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Book Recommendation System</title>
+    <style>
+        /* Styling for a minimal and elegant look */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e5ec;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 14px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            flex: 1;
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #4A4A4A;
+        }
+        .profile {
+            text-align: right;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: #4A4A4A;
+        }
+        .profile button {
+            background: #ff4b5c;
+            color: white;
+            border: none;
+            padding: 5px 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            border-radius: 4px;
+        }
+        .profile button:hover {
+            background: #ff616d;
+        }
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #0066cc;
+            padding: 10px 15px;
+            font-size: 0.9em;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+        .nav-links a:hover {
+            background: #d9e9ff;
+            color: #004a99;
+            border-color: #004a99;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 1.2em;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .card p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        .card a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .card a:hover {
+            color: #004a99;
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #0066cc;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: auto;
+        }
+        footer a {
+            color: #d9e9ff;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Admin Profile Display -->
+    <div class="profile">
+        <p>Logged in as: <strong>admin</strong> (<span id="username"></span>)
+            <button id="logoutButton">Logout</button></p>
+    </div>
+
+    <h1>Admin Dashboard - Book Recommendation System</h1>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="addbook.html">Add New Book</a>
+        <a href="deletebook.html">Delete Book</a>
+        <a href="updaterating.html">Update Book Rating</a>
+        <a href="showallbooks.html">View All Books</a>
+        <a href="showusers.html">Show All Users</a>
+    </div>
+
+    <!-- Admin functionalities section -->
+    <div class="card">
+        <h2>Manage Books</h2>
+        <p><a href="addbook.html">Add a New Book</a></p>
+        <p><a href="deletebook.html">Delete Book</a></p>
+        <p><a href="updaterating.html">Update rating for book</a></p>
+        <p><a href="showallbooks.html">View All Books</a></p>
+    </div>
+
+    <div class="card">
+        <h2>Manage Users</h2>
+        <p><a href="showusers.html">Show All Users</a></p>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <p>
+        <a href="aboutus.html">About Us</a> | Book Recommendation website managed by admin
+    </p>
+</footer>
+
+<!-- JavaScript to dynamically show admin's username -->
+<script>
+    // Fetch the logged-in admin's username from the session or API
+    const adminUsername = "admin"; // Replace this with dynamic fetching logic
+    document.getElementById("username").textContent = adminUsername;
+
+    // Logout button functionality
+    document.getElementById("logoutButton").addEventListener("click", function() {
+        alert("Logged out successfully!");
+        window.location.href = 'login.html';
+    });
+</script>
+
+</body>
+</html>

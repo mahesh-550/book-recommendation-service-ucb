@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home: Book Recommender</title>
+    <style>
+        /* Basic styling for the header, footer, and layout */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        header a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Styling for the image container */
+        .image-container {
+            display: flex;
+            overflow-x: auto;
+            white-space: nowrap;
+            scroll-behavior: smooth;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 300px;
+            margin: 0 10px;
+            transition: transform 0.2s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Scroll animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Make the image container automatically scroll */
+        .auto-scroll {
+            display: inline-block;
+            animation: scroll 100s linear infinite;
+        }
+
+        /* Footer positioning to be at the bottom */
+        html, body {
+            height: 100%;
+        }
+
+        .footer p a{
+            font-size: 14px;
+            color: #ffff;
+            text-decoration: none;
+        }
+
+
+        .content {
+            min-height: 100vh;
+            position: relative;
+            padding-bottom: 60px; /* Footer height */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <a href="login.html">Login</a>
+    <a href="signup.html">Signup</a>
+    <a href="login.html">Recommender</a>
+    <a href="login.html">Admin</a>
+    <a href="blog.html">Blog</a>
+    <a href="review.html">Feedback</a>
+    <a href="aboutus.html">About</a>
+    <a href="collab.html">Collaboration</a>
+</header>
+
+<!-- Main Content with auto-scrolling images -->
+<div class="content">
+    <div class="image-container">
+        <div class="auto-scroll">
+            <img src="images/python_book.jpg" alt="Book1">
+            <img src="images/java_web_book.jpg" alt="Book2">
+            <img src="images/mlanddl.jpg" alt="Book3">
+            <img src="images/postgresql.jpg" alt="Book4">
+            <img src="images/business_management_book.jpg" alt="Book5">
+            <img src="images/springboot_book.jpg" alt="Book6">
+            <img src="images/prompt_engineering_book.jpg" alt="Book7">
+            <img src="images/algo_machine_learning.jfif" alt="Book8">
+            <img src="images/value_chain_analysis.jfif" alt="Book9">
+            <img src="images/oracle_plsql.jpg" alt="Book10">
+            <img src="images/intro_to_java.jpg" alt="Book11">
+            <img src="images/google_cloud_book.jpg" alt="Book12">
+
+            <img src="images/python_book.jpg" alt="Book1">
+            <img src="images/java_web_book.jpg" alt="Book2">
+            <img src="images/mlanddl.jpg" alt="Book3">
+            <img src="images/postgresql.jpg" alt="Book4">
+            <img src="images/business_management_book.jpg" alt="Book5">
+            <img src="images/springboot_book.jpg" alt="Book6">
+            <img src="images/prompt_engineering_book.jpg" alt="Book7">
+            <img src="images/algo_machine_learning.jfif" alt="Book8">
+            <img src="images/value_chain_analysis.jfif" alt="Book9">
+            <img src="images/oracle_plsql.jpg" alt="Book10">
+            <img src="images/intro_to_java.jpg" alt="Book11">
+            <img src="images/google_cloud_book.jpg" alt="Book12">
+
+            <img src="images/python_book.jpg" alt="Book1">
+            <img src="images/java_web_book.jpg" alt="Book2">
+            <img src="images/mlanddl.jpg" alt="Book3">
+            <img src="images/postgresql.jpg" alt="Book4">
+            <img src="images/business_management_book.jpg" alt="Book5">
+            <img src="images/springboot_book.jpg" alt="Book6">
+            <img src="images/prompt_engineering_book.jpg" alt="Book7">
+            <img src="images/algo_machine_learning.jfif" alt="Book8">
+            <img src="images/value_chain_analysis.jfif" alt="Book9">
+            <img src="images/oracle_plsql.jpg" alt="Book10">
+            <img src="images/intro_to_java.jpg" alt="Book11">
+            <img src="images/google_cloud_book.jpg" alt="Book12">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <p><a href="about.html">About Us</a></p>
+    <p class="footertext">Book recommendation website is owned and operated by admin</p>
+</footer>
+
+</body>
+</html>

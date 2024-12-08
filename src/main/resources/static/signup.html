@@ -111,6 +111,11 @@
 <div class="signup-container">
     <h2>Sign Up</h2>
 
+    <!-- Success message placeholder -->
+    <div class="success-message" id="success-message">
+        <!-- Display signup success here (if any) -->
+    </div>
+    
     <!-- Error message placeholder -->
     <div class="error-message" class="success-message" id="error-message">
         <!-- Display signup errors here (if any) -->
@@ -198,7 +203,7 @@
             }
         })
         .then(message => {
-            document.getElementByClassName('success-message').textContent = message; // Display success message
+            document.getElementById('success-message').textContent = message; // Display success message
             //sendWelcomeEmail(data.email); // Send welcome email after successful signup
             // Clear the form after successful signup
             document.getElementById('signup-form').reset();
